@@ -18,16 +18,16 @@ class App extends Component {
     return (
       <div className="App">
         <header className="header">
-            <h1>Demo Blog</h1>
+          <h1>Demo Blog</h1>
         </header>
-        <ul>
+        <main>
           {this.state.blogs.map((blog) => (
-           <div className="blog" key={blog.id}>
-               <h2>{blog.title}</h2>
-               <p>{blog.desc}</p>
-           </div>
+            <div className="blog" key={blog.id.toString()}>
+              <h2>{blog.title}</h2>
+              <p>{blog.desc}</p>
+            </div>
           ))}
-        </ul>
+        </main>
       </div>
     );
   }
