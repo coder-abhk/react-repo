@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: "Karla";
+}
+
+.clockContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs{
+    font-size: 18px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.header p{
+    color: #7a00dd;
+    font-size: 45px;
+    line-height: 65px;
+}
