@@ -19,7 +19,7 @@ const App = () => {
 
         <div>
           {isLoggedIn ? (
-            <div ClassName="btn__container">
+            <div className="btn__container">
               <UserGreeting isLoggedIn={isLoggedIn} />{" "}
               <button className="handle__btn" onClick={handleLogout}>Logout</button>
             </div>
