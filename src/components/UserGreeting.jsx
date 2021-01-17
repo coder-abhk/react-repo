@@ -1,3 +1,5 @@
+import './UserGreeting.css';
+
 const UserGreeting = (isLoggedIn) => {
   const user = {
     name: "coder-abhk",

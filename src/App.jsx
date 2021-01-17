@@ -1,5 +1,6 @@
 import UserGreeting from "./components/UserGreeting";
 import { useState } from "react";
+import './App.css'
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -14,15 +15,13 @@ const App = () => {
   return (
     <div className="App">
       <div className="greet__wrapper">
-        <p>
-          <button onClick={handleLogin}>Login</button>
-        </p>
+        <p>{!isLoggedIn ? <button className="handle__btn" onClick={handleLogin}>Login</button> : ""}</p>
 
         <div>
-          {isLoggedIn === true ? (
-            <div>
+          {isLoggedIn ? (
+            <div ClassName="btn__container">
               <UserGreeting isLoggedIn={isLoggedIn} />{" "}
-              <button onClick={handleLogout}>Logout</button>
+              <button className="handle__btn" onClick={handleLogout}>Logout</button>
             </div>
           ) : (
             ""
